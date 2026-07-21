@@ -12,15 +12,69 @@
 
 <body>
 
-    <section class="hero">
+    <header class="hero" id="home">
 
-        <h1>Chris Stolz</h1>
+        <nav class="navbar">
+            <a href="#home" class="logo">CS</a>
 
-        <p>
-            Engineer • Analog Photographer • Explorer
-        </p>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#engineering">Engineering</a>
+                <a href="#photography">Photography</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
 
-    </section>
+        <div class="hero-content">
+            <h1>Chris Stolz</h1>
+
+            <p>
+                Engineer • Analog Photographer • Explorer
+            </p>
+        </div>
+
+        <a href="#about" class="scroll-link">
+            Scroll to explore
+            <span>↓</span>
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="about section" id="about">
+            <p class="section-label">About</p>
+
+            <h2>
+                Engineering curiosity meets analog photography.
+            </h2>
+
+            <p class="section-text">
+                I enjoy understanding how things work, turning ideas into
+                practical projects and documenting meaningful moments through
+                analog photography.
+            </p>
+        </section>
+
+        <section class="section" id="engineering">
+            <p class="section-label">Engineering</p>
+
+            <h2>Projects built through curiosity and experimentation.</h2>
+        </section>
+
+        <section class="section" id="photography">
+            <p class="section-label">Photography</p>
+
+            <h2>A visual archive of places, people and moments.</h2>
+        </section>
+
+        <section class="section" id="contact">
+            <p class="section-label">Contact</p>
+
+            <h2>Let’s connect.</h2>
+        </section>
+
+    </main>
 
     <script src="js/script.js"></script>
 

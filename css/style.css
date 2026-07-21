@@ -4,18 +4,31 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: white;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hero section */
+
 .hero {
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
 
     background-image:
         linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.5)
         ),
         url("../images/hero.JPG");
 
@@ -24,20 +37,153 @@ body {
     background-repeat: no-repeat;
 
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
+/* Navigation */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 28px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero p {
-    font-size: 1.6rem;
-    letter-spacing: 2px;
+.logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+/* Hero text */
+
+.hero-content {
+    padding: 0 24px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    margin-bottom: 18px;
+    letter-spacing: -0.04em;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    letter-spacing: 0.12em;
+    line-height: 1.6;
+}
+
+/* Scroll indicator */
+
+.scroll-link {
+    position: absolute;
+    bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.scroll-link span {
+    font-size: 1.3rem;
+}
+
+/* General sections */
+
+.section {
+    min-height: 70vh;
+    padding: 120px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.section-label {
+    margin-bottom: 24px;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.section h2 {
+    max-width: 900px;
+
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.section-text {
+    max-width: 720px;
+    margin-top: 32px;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+    opacity: 0.75;
+}
+
+/* Smartphone layout */
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 22px 20px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 0.72rem;
+    }
+
+    .hero-content p {
+        letter-spacing: 0.06em;
+    }
+
+    .section {
+        min-height: 60vh;
+        padding: 90px 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav-links a:nth-child(2),
+    .nav-links a:nth-child(3) {
+        display: none;
+    }
 }
