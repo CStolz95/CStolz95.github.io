@@ -156,28 +156,72 @@ a {
     opacity: 0.75;
 }
 
-/* Smartphone layout */
+/* Tablet and smartphone layout */
 
 @media (max-width: 700px) {
+    .hero {
+        min-height: 100svh;
+
+        /*
+        Move the visible crop toward the most important
+        part of the photograph.
+        */
+        background-position: 62% center;
+    }
+
     .navbar {
-        padding: 22px 20px;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 1rem;
     }
 
     .nav-links {
-        gap: 14px;
+        gap: 18px;
     }
 
     .nav-links a {
-        font-size: 0.72rem;
+        font-size: 0.75rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 14vw, 4.2rem);
+        line-height: 1;
+        margin-bottom: 16px;
     }
 
     .hero-content p {
-        letter-spacing: 0.06em;
+        max-width: 300px;
+        margin: 0 auto;
+
+        font-size: 0.9rem;
+        line-height: 1.7;
+        letter-spacing: 0.08em;
+    }
+
+    .scroll-link {
+        bottom: 22px;
+        font-size: 0.65rem;
     }
 
     .section {
-        min-height: 60vh;
+        min-height: auto;
         padding: 90px 24px;
+    }
+
+    .section h2 {
+        font-size: clamp(2.2rem, 11vw, 3.4rem);
+    }
+
+    .section-text {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }
 
