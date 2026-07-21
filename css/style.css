@@ -234,15 +234,15 @@ a {
 
 
 .photo-large {
-    grid-column: span 5;
+    grid-column: span 7;
 }
 
 .photo-medium {
-    grid-column: span 4;
+    grid-column: span 5;
 }
 
 .photo-small {
-    grid-column: span 3;
+    grid-column: span 4;
 }
 
 .photo-lower {
