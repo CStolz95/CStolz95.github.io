@@ -296,12 +296,60 @@ a {
     visibility: visible;
 }
 
-.lightbox-image {
+.lightbox-content {
     max-width: min(92vw, 1500px);
-    max-height: 88vh;
+    max-height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-image {
+    display: block;
+
+    max-width: 100%;
+    max-height: 72vh;
 
     object-fit: contain;
 }
+
+
+.lightbox-caption {
+    margin-top: 24px;
+    padding-bottom: 8px;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.lightbox-caption p {
+    margin: 4px 0;
+
+    font-size: 0.78rem;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.lightbox-caption .lightbox-title {
+    margin-bottom: 10px;
+
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.lightbox-caption .lightbox-film {
+    margin-top: 10px;
+}
+
+.lightbox-caption .lightbox-credit {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    opacity: 0.75;
+}
+
+
 
 .lightbox-close {
     position: absolute;
@@ -438,6 +486,28 @@ body.lightbox-open {
         top: 14px;
         right: 16px;
     }
+
+
+
+    .lightbox-content {
+    max-width: 100%;
+    max-height: 92vh;
+    }
+
+    .lightbox-image {
+        max-height: 68vh;
+    }
+
+    .lightbox-caption {
+        margin-top: 18px;
+    }
+
+    .lightbox-caption p {
+        font-size: 0.72rem;
+    }
+
+
+
 
 }
 
