@@ -860,7 +860,7 @@ body.lightbox-open {
 .project-challenges-text h2 {
     max-width: 620px;
 
-    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-size: clamp(2.3rem, 4.2vw, 3.9rem);
     font-weight: 500;
     line-height: 1.05;
     letter-spacing: -0.045em;
@@ -1197,7 +1197,7 @@ body.lightbox-open {
     .project-challenges-text h2 {
         max-width: 100%;
 
-        font-size: clamp(2.3rem, 11vw, 3.2rem);
+        font-size: clamp(2rem, 9vw, 2.8rem);
         line-height: 1.08;
     }
 
