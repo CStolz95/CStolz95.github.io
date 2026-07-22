@@ -856,10 +856,11 @@ body.lightbox-open {
     gap: 80px;
 }
 
-.project-story h2 {
+.project-story h2,
+.project-challenges-text h2 {
     max-width: 620px;
 
-    font-size: clamp(2.4rem, 5vw, 5rem);
+    font-size: clamp(2.8rem, 5vw, 5rem);
     font-weight: 500;
     line-height: 1.05;
     letter-spacing: -0.045em;
@@ -885,10 +886,10 @@ body.lightbox-open {
 
 .project-challenges {
     width: 100%;
-    padding: 40px 8% 120px;
+    padding: 120px 8%;
 
     display: grid;
-    grid-template-columns: 500px minmax(0, 1fr);
+    grid-template-columns: 560px minmax(0, 1fr);
     grid-template-areas:
         "challenges sketch"
         "video sketch";
@@ -903,16 +904,11 @@ body.lightbox-open {
     grid-area: challenges;
 
     width: 100%;
-    max-width: 420px;
+    max-width: 560px;
 }
 
 .project-challenges-text h2 {
     margin-bottom: 24px;
-
-    font-size: clamp(2rem, 3.5vw, 3.8rem);
-    font-weight: 500;
-    line-height: 1.08;
-    letter-spacing: -0.04em;
 }
 
 .project-challenges-text > p:not(.section-label) {
@@ -990,12 +986,12 @@ body.lightbox-open {
 
 
 .project-reflection {
-    padding-bottom: 180px;
+    padding: 120px 8%;
 }
 
 .project-footer {
     margin: 0 8%;
-    padding: 40px 0 60px;
+    padding: 24px 0 60px;
 
     display: flex;
     justify-content: space-between;
@@ -1197,7 +1193,8 @@ body.lightbox-open {
         gap: 38px;
     }
 
-    .project-story h2 {
+    .project-story h2,
+    .project-challenges-text h2 {
         max-width: 100%;
 
         font-size: clamp(2.3rem, 11vw, 3.2rem);
