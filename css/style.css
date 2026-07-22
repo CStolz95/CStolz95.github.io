@@ -834,8 +834,8 @@ body.lightbox-open {
     padding: 40px 8% 120px;
 
     display: grid;
-    grid-template-columns: 420px minmax(0, 1fr);
-    gap: 64px;
+    grid-template-columns: 420px minmax(0, 920px);
+    gap: 72px;
     align-items: start;
 }
 
