@@ -828,6 +828,65 @@ body.lightbox-open {
     margin: 0 auto;
 }
 
+
+.project-challenges {
+    width: min(94vw, 1800px);
+    margin: 0 auto;
+    padding: 40px 0 120px;
+
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+.project-challenges-text {
+    max-width: 420px;
+}
+
+.project-challenges-text h2 {
+    margin-bottom: 24px;
+
+    font-size: clamp(2rem, 3.5vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.project-challenges-text > p:not(.section-label) {
+    margin-bottom: 28px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.68;
+}
+
+.project-challenges-text ul {
+    list-style: none;
+}
+
+.project-challenges-text li {
+    padding: 12px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.72;
+}
+
+.project-challenges-text li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-challenges .project-secondary-image {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 .project-reflection {
     padding-bottom: 180px;
 }
@@ -986,6 +1045,24 @@ body.lightbox-open {
 
         font-size: 0.68rem;
     }
+
+
+    .project-challenges {
+        width: 100%;
+        padding: 72px 24px 96px;
+
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .project-challenges-text {
+        max-width: 100%;
+    }
+
+    .project-challenges .project-secondary-image {
+        padding: 0;
+    }
+
 
     .project-story {
         width: 100%;
