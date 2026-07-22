@@ -286,7 +286,36 @@ a {
     opacity: 1;
 }
 
+.project-list-item {
+    width: 100%;
+    margin-top: 100px;
+    padding: 40px 0;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-list-heading h3 {
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.project-list-item .project-summary {
+    justify-self: end;
+}
+
+.project-list-item:hover .project-link {
+    opacity: 1;
+}
 
 
 
@@ -651,6 +680,27 @@ body.lightbox-open {
     .featured-project h3 {
         font-size: 2.4rem;
     }
+
+    .project-list-item {
+    margin-top: 64px;
+    padding: 32px 0;
+
+    grid-template-columns: 1fr;
+    gap: 24px;
+    }
+
+    .project-list-item .project-summary {
+        justify-self: start;
+    }
+
+    .project-list-heading h3 {
+        font-size: 2.4rem;
+    }
+
+
+
+
+
 
 }
 
