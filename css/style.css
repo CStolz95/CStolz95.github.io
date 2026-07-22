@@ -830,9 +830,7 @@ body.lightbox-open {
 
 
 .project-challenges {
-    width: min(94vw, 1800px);
-    margin: 0 auto;
-    padding: 40px 0 120px;
+    padding: 40px 8% 120px;
 
     display: grid;
     grid-template-columns: 320px 1fr;
