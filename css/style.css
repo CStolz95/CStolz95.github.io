@@ -817,7 +817,11 @@ body.lightbox-open {
     opacity: 0.4;
 }
 
-.project-hero-image,
+.project-hero-image {
+    margin: 0 8%;
+    padding: 0;
+}
+
 .project-secondary-image {
     margin: 0;
     padding: 0 5%;
