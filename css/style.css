@@ -834,12 +834,22 @@ body.lightbox-open {
     padding: 40px 8% 120px;
 
     display: grid;
-    grid-template-columns: 420px minmax(0, 920px);
-    gap: 72px;
+    grid-template-columns: 420px minmax(0, 820px);
+    grid-template-areas:
+        "challenges sketch"
+        "video sketch";
+
+    column-gap: 64px;
+    row-gap: 52px;
+
     align-items: start;
+    justify-content: start;
 }
 
 .project-challenges-text {
+    grid-area: challenges;
+
+    width: 100%;
     max-width: 420px;
 }
 
@@ -881,7 +891,10 @@ body.lightbox-open {
 
 
 .challenge-video {
-    margin-top: 72px;
+    grid-area: video;
+
+    width: 100%;
+    margin-top: 0;
     padding-top: 32px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -914,8 +927,10 @@ body.lightbox-open {
 
 
 .project-challenges .project-secondary-image {
+    grid-area: sketch;
+
     width: 100%;
-    max-width: none;
+    max-width: 820px;
     margin: 0;
     padding: 0;
 }
@@ -1071,15 +1086,28 @@ body.lightbox-open {
         padding: 72px 24px 96px;
 
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "challenges"
+            "sketch"
+            "video";
+
         gap: 48px;
     }
 
     .project-challenges-text {
+        width: 100%;
         max-width: 100%;
     }
 
     .project-challenges .project-secondary-image {
+        width: 100%;
+        max-width: none;
         padding: 0;
+    }
+
+    .challenge-video {
+        width: 100%;
+        margin-top: 0;
     }
 
 
