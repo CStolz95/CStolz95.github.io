@@ -1017,6 +1017,26 @@ body.lightbox-open {
     opacity: 0.6;
 }
 
+.gnss-rover-image {
+    width: min(560px, 84%);
+    margin: 80px 8% 120px auto;
+}
+
+.gnss-rover-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gnss-rover-image figcaption {
+    margin-top: 12px;
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+
+    opacity: 0.55;
+}
+
 
 
 
@@ -1205,4 +1225,13 @@ body.lightbox-open {
         align-items: flex-start;
         gap: 24px;
     }
+
+    .gnss-rover-image {
+        width: auto;
+        margin: 56px 24px 80px;
+    }
+
+
+
+
 }
