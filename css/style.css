@@ -830,12 +830,9 @@ body.lightbox-open {
 
 
 .project-challenges {
-    padding: 40px 8% 120px;
-
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 72px;
-    align-items: start;
+    grid-template-columns: 420px 1fr;
+    gap: 64px;
 }
 
 .project-challenges-text {
