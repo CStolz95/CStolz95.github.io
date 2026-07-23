@@ -914,39 +914,44 @@ body.lightbox-open {
    Reflection
    ========================================================= */
 
-.project-reflection{
-    width:100%;
-    padding:120px 8%;
+.project-reflection {
+    width: 100%;
+    padding: 120px 8%;
 }
 
-.project-reflection .section-label{
-    margin-bottom:32px;
+.project-reflection > .section-label {
+    margin-bottom: 32px;
 }
 
-.project-reflection h2{
-    max-width:760px;
-    margin-bottom:32px;
+.project-reflection h2 {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 40px;
 
-    font-size:clamp(2.3rem,4.2vw,3.9rem);
-    font-weight:500;
-    line-height:1.05;
-    letter-spacing:-0.045em;
+    font-size: clamp(2.3rem, 4.2vw, 3.9rem);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
 }
 
-.project-reflection p{
-    max-width:960px;
-
-    margin-bottom:28px;
-
-    font-size:1rem;
-    line-height:1.8;
-    opacity:.68;
+.project-reflection-text {
+    width: 100%;
+    max-width: none;
 }
 
-.project-reflection p:last-child{
-    margin-bottom:0;
+.project-reflection-text p {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 28px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.68;
 }
 
+.project-reflection-text p:last-child {
+    margin-bottom: 0;
+}
 
 /* =========================================================
    Project resource: report, video, GitHub or publication
@@ -1146,18 +1151,27 @@ body.lightbox-open {
     }
 
 
-    .project-reflection{
-        padding:80px 24px 96px;
+    .project-reflection {
+        width: 100%;
+        padding: 80px 24px 96px;
     }
 
-    .project-reflection h2{
-        max-width:100%;
-
-        font-size:clamp(2rem,9vw,2.8rem);
+    .project-reflection > .section-label {
+        margin-bottom: 28px;
     }
 
-    .project-reflection p{
-        max-width:100%;
+    .project-reflection h2 {
+        width: 100%;
+        max-width: none;
+
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        line-height: 1.08;
+    }
+
+    .project-reflection-text,
+    .project-reflection-text p {
+        width: 100%;
+        max-width: none;
     }
 
     .project-resource {
