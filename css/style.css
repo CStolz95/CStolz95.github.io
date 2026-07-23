@@ -868,9 +868,16 @@ body.lightbox-open {
     padding: 120px 8%;
 }
 
+.project-challenges-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: start;
+}
+
 .project-challenges-text {
     width: 100%;
-    max-width: 760px;
+    max-width: 560px;
 }
 
 .project-challenges-text h2 {
@@ -878,7 +885,6 @@ body.lightbox-open {
 }
 
 .project-challenges-text > p:not(.section-label) {
-    max-width: 620px;
     margin-bottom: 28px;
 
     font-size: 1rem;
@@ -887,8 +893,6 @@ body.lightbox-open {
 }
 
 .project-challenges-text ul {
-    max-width: 760px;
-
     list-style: none;
 }
 
@@ -904,6 +908,57 @@ body.lightbox-open {
 
 .project-challenges-text li:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+/* Challenges image */
+
+.project-challenges-image {
+    width: 100%;
+    margin: 0;
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.035),
+            rgba(255, 255, 255, 0.015)
+        );
+}
+
+.image-placeholder span {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.32;
+}
+
+.project-challenges-image figcaption {
+    margin-top: 12px;
+
+    font-size: 0.72rem;
+    line-height: 1.5;
+    opacity: 0.4;
+}
+
+.project-challenges-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 3px;
+    filter: grayscale(100%);
 }
 
 
@@ -1194,9 +1249,22 @@ body.lightbox-open {
         padding: 72px 24px 96px;
     }
 
+    .project-challenges-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
     .project-challenges-text {
         width: 100%;
         max-width: 100%;
+    }
+
+    .project-challenges-image {
+        width: 100%;
+    }
+
+    .image-placeholder {
+        aspect-ratio: 4 / 3;
     }
 
 
