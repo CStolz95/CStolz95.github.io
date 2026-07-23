@@ -19,6 +19,13 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+
 /* Hero section */
 
 .hero {
@@ -892,7 +899,7 @@ body.lightbox-open {
     grid-template-columns: 560px minmax(0, 1fr);
     grid-template-areas:
         "challenges sketch"
-        "video sketch";
+        "resource sketch";
 
     column-gap: 80px;
     row-gap: 52px;
@@ -939,8 +946,8 @@ body.lightbox-open {
 
 
 
-.challenge-video {
-    grid-area: video;
+.project-resource {
+    grid-area: resource;
 
     width: 100%;
     margin-top: 0;
@@ -949,11 +956,11 @@ body.lightbox-open {
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.challenge-video .section-label {
+.project-resource .section-label {
     margin-bottom: 20px;
 }
 
-.challenge-video h3 {
+.project-resource h3 {
     margin-bottom: 18px;
 
     font-size: 1.35rem;
@@ -961,7 +968,7 @@ body.lightbox-open {
     line-height: 1.3;
 }
 
-.challenge-video > p:not(.section-label) {
+.project-resource > p:not(.section-label) {
     margin-bottom: 20px;
 
     font-size: 0.9rem;
@@ -969,7 +976,15 @@ body.lightbox-open {
     opacity: 0.68;
 }
 
-.challenge-video .video-link {
+.project-resource 
+.project-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    align-items: center;
+}
+
+.resource-link {
     margin-top: 0;
 }
 
@@ -1003,7 +1018,7 @@ body.lightbox-open {
 }
 
 
-.video-link {
+.resource-link {
     display: inline-block;
     margin-top: 1.5rem;
     color: inherit;
@@ -1012,7 +1027,7 @@ body.lightbox-open {
     padding-bottom: 0.2rem;
 }
 
-.video-link:hover {
+.resource-link:hover {
     opacity: 0.6;
 }
 
@@ -1158,7 +1173,7 @@ body.lightbox-open {
         grid-template-areas:
             "challenges"
             "sketch"
-            "video";
+            "resource";
 
         gap: 48px;
     }
@@ -1174,9 +1189,15 @@ body.lightbox-open {
         padding: 0;
     }
 
-    .challenge-video {
+    .project-resource {
         width: 100%;
         margin-top: 0;
+    }
+
+    .project-resource-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
     }
 
 
