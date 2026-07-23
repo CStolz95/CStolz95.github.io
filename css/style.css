@@ -26,7 +26,9 @@ button:focus-visible {
 }
 
 
-/* Hero section */
+/* =========================================================
+   Hero section
+   ========================================================= */
 
 .hero {
     position: relative;
@@ -50,7 +52,10 @@ button:focus-visible {
     text-align: center;
 }
 
-/* Navigation */
+
+/* =========================================================
+   Navigation
+   ========================================================= */
 
 .navbar {
     position: absolute;
@@ -79,6 +84,7 @@ button:focus-visible {
 .nav-links a {
     font-size: 0.9rem;
     opacity: 0.85;
+
     transition: opacity 0.2s ease;
 }
 
@@ -86,26 +92,33 @@ button:focus-visible {
     opacity: 1;
 }
 
-/* Hero text */
+
+/* =========================================================
+   Hero text
+   ========================================================= */
 
 .hero-content {
     padding: 0 24px;
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
     margin-bottom: 18px;
-    letter-spacing: -0.04em;
+
+    font-size: clamp(3rem, 7vw, 6rem);
     font-weight: 500;
+    letter-spacing: -0.04em;
 }
 
 .hero-content p {
     font-size: clamp(1rem, 2vw, 1.35rem);
-    letter-spacing: 0.12em;
     line-height: 1.6;
+    letter-spacing: 0.12em;
 }
 
-/* Scroll indicator */
+
+/* =========================================================
+   Scroll indicator
+   ========================================================= */
 
 .scroll-link {
     position: absolute;
@@ -125,7 +138,10 @@ button:focus-visible {
     font-size: 1.3rem;
 }
 
-/* General sections */
+
+/* =========================================================
+   General sections
+   ========================================================= */
 
 .section {
     min-height: 70vh;
@@ -165,8 +181,9 @@ button:focus-visible {
 }
 
 
-
-/* Contact */
+/* =========================================================
+   Contact
+   ========================================================= */
 
 .contact-links {
     margin-top: 48px;
@@ -175,39 +192,35 @@ button:focus-visible {
 }
 
 .contact-links a {
-    font-size: 1rem;
-
-    opacity: 0.6;
-
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-
     padding-bottom: 5px;
 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 1rem;
+    opacity: 0.6;
+
     transition:
-        opacity .25s ease,
-        border-color .25s ease;
+        opacity 0.25s ease,
+        border-color 0.25s ease;
 }
 
 .contact-links a:hover {
-    opacity: 1;
-
     border-bottom-color: white;
+    opacity: 1;
 }
 
 .footer-note {
     margin-top: 80px;
 
-    font-size: .8rem;
-
-    letter-spacing: .08em;
-
-    opacity: .25;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    opacity: 0.25;
 }
 
 
-
-
-/* Featured engineering project */
+/* =========================================================
+   Featured engineering project
+   ========================================================= */
 
 .engineering-section {
     padding-bottom: 160px;
@@ -223,12 +236,14 @@ button:focus-visible {
 .featured-project-image {
     width: 100%;
     overflow: hidden;
+
     border-radius: 3px;
 }
 
 .featured-project-image img {
     width: 100%;
     height: auto;
+
     display: block;
 
     filter: grayscale(100%);
@@ -269,6 +284,7 @@ button:focus-visible {
 
 .project-summary {
     max-width: 500px;
+
     justify-self: end;
 }
 
@@ -279,8 +295,9 @@ button:focus-visible {
 }
 
 .project-link {
-    display: inline-block;
     margin-top: 24px;
+
+    display: inline-block;
 
     font-size: 0.85rem;
     letter-spacing: 0.04em;
@@ -325,33 +342,13 @@ button:focus-visible {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Photography contact sheet */
+/* =========================================================
+   Photography contact sheet
+   ========================================================= */
 
 .photography-section {
     padding-bottom: 160px;
 }
-
 
 .contact-sheet {
     width: 100%;
@@ -360,22 +357,20 @@ button:focus-visible {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 90px 36px;
-
     align-items: start;
 }
 
-
-
 .photo-frame {
     padding: 0;
-    border: 0;
-    background: none;
-    cursor: zoom-in;
 
     display: block;
     overflow: hidden;
-}
 
+    border: 0;
+    background: none;
+
+    cursor: zoom-in;
+}
 
 .photo-large {
     grid-column: span 7;
@@ -393,12 +388,12 @@ button:focus-visible {
     margin-top: 80px;
 }
 
-
-
 .photo-frame img {
     width: 100%;
     height: auto;
+
     display: block;
+
     border-radius: 3px;
 
     transition:
@@ -411,7 +406,10 @@ button:focus-visible {
     opacity: 0.88;
 }
 
-/* Lightbox */
+
+/* =========================================================
+   Lightbox
+   ========================================================= */
 
 .lightbox {
     position: fixed;
@@ -449,14 +447,13 @@ button:focus-visible {
 }
 
 .lightbox-image {
-    display: block;
-
     max-width: 100%;
     max-height: 72vh;
 
+    display: block;
+
     object-fit: contain;
 }
-
 
 .lightbox-caption {
     margin-top: 24px;
@@ -488,20 +485,19 @@ button:focus-visible {
 
 .lightbox-caption .lightbox-credit {
     margin-top: 10px;
+
     font-size: 0.7rem;
     opacity: 0.75;
 }
-
-
 
 .lightbox-close {
     position: absolute;
     top: 24px;
     right: 30px;
 
-    border: 0;
     padding: 8px;
 
+    border: 0;
     background: none;
     color: white;
 
@@ -522,37 +518,14 @@ body.lightbox-open {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet and smartphone layout */
+/* =========================================================
+   Main page — tablet and smartphone layout
+   ========================================================= */
 
 @media (max-width: 700px) {
+
     .hero {
         min-height: 100svh;
-
-        /*
-        Move the visible crop toward the most important
-        part of the photograph.
-        */
         background-position: 62% center;
     }
 
@@ -578,9 +551,10 @@ body.lightbox-open {
     }
 
     .hero h1 {
+        margin-bottom: 16px;
+
         font-size: clamp(2.8rem, 14vw, 4.2rem);
         line-height: 1;
-        margin-bottom: 16px;
     }
 
     .hero-content p {
@@ -594,6 +568,7 @@ body.lightbox-open {
 
     .scroll-link {
         bottom: 22px;
+
         font-size: 0.65rem;
     }
 
@@ -611,11 +586,9 @@ body.lightbox-open {
         line-height: 1.7;
     }
 
-
     .photography-section {
-    padding-bottom: 100px;
+        padding-bottom: 100px;
     }
-
 
     .contact-sheet {
         margin-top: 56px;
@@ -633,7 +606,6 @@ body.lightbox-open {
     .photo-lower {
         margin-top: 32px;
     }
- 
 
     .lightbox {
         padding: 18px;
@@ -649,12 +621,10 @@ body.lightbox-open {
         right: 16px;
     }
 
-
     .lightbox-content {
-    max-width: 100%;
-    max-height: 92vh;
+        max-width: 100%;
+        max-height: 92vh;
     }
-
 
     .lightbox-caption {
         margin-top: 18px;
@@ -664,9 +634,8 @@ body.lightbox-open {
         font-size: 0.72rem;
     }
 
-
     .engineering-section {
-    padding-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .featured-project {
@@ -689,11 +658,11 @@ body.lightbox-open {
     }
 
     .project-list-item {
-    margin-top: 64px;
-    padding: 32px 0;
+        margin-top: 64px;
+        padding: 32px 0;
 
-    grid-template-columns: 1fr;
-    gap: 24px;
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .project-list-item .project-summary {
@@ -703,15 +672,10 @@ body.lightbox-open {
     .project-list-heading h3 {
         font-size: 2.4rem;
     }
-
-
-
-
-
-
 }
 
 @media (max-width: 520px) {
+
     .nav-links a:nth-child(2),
     .nav-links a:nth-child(3) {
         display: none;
@@ -734,19 +698,9 @@ body.lightbox-open {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Individual project page */
+/* =========================================================
+   Individual project page
+   ========================================================= */
 
 .project-page {
     background: #111;
@@ -778,23 +732,27 @@ body.lightbox-open {
     opacity: 1;
 }
 
+
+/* Project introduction */
+
 .project-introduction {
     padding: 120px 8% 100px;
 }
 
 .project-introduction h1 {
-        width: 100%;
-        max-width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 
-        font-size: clamp(3.4rem, 9vw, 8rem);
-        line-height: 0.92;
-        letter-spacing: -0.06em;
+    font-size: clamp(3.4rem, 9vw, 8rem);
+    font-weight: 500;
+    line-height: 0.92;
+    letter-spacing: -0.06em;
 
-        overflow-wrap: break-word;
-    }
+    overflow-wrap: break-word;
+}
 
 .project-lead {
-    max-width: 700px;
+    max-width: 650px;
     margin-top: 48px;
 
     font-size: clamp(1.2rem, 2.2vw, 1.8rem);
@@ -804,13 +762,13 @@ body.lightbox-open {
 
 .project-details {
     margin-top: 80px;
+    padding-top: 24px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.14);
-    padding-top: 24px;
 }
 
 .project-details p {
@@ -826,13 +784,17 @@ body.lightbox-open {
     opacity: 0.4;
 }
 
+
+/* Project images */
+
 .project-hero-image {
     margin: 0 8%;
     padding: 0;
 }
 
 .project-secondary-image {
-    margin: 0;
+    max-width: 1700px;
+    margin: 0 auto;
     padding: 0 5%;
 }
 
@@ -840,6 +802,7 @@ body.lightbox-open {
 .project-secondary-image img {
     width: 100%;
     height: auto;
+
     display: block;
 
     border-radius: 3px;
@@ -855,6 +818,9 @@ body.lightbox-open {
     opacity: 0.4;
 }
 
+
+/* Project overview/story */
+
 .project-story {
     padding: 120px 8%;
 }
@@ -866,7 +832,8 @@ body.lightbox-open {
 }
 
 .project-story h2,
-.project-challenges-text h2 {
+.project-challenges-text h2,
+.project-solution h2 {
     max-width: 620px;
 
     font-size: clamp(2.3rem, 4.2vw, 3.9rem);
@@ -887,33 +854,23 @@ body.lightbox-open {
     opacity: 0.68;
 }
 
-.project-secondary-image {
-    max-width: 1700px;
-    margin: 0 auto;
+.project-story-text p:last-child {
+    margin-bottom: 0;
 }
 
+
+/* =========================================================
+   Key challenges
+   ========================================================= */
 
 .project-challenges {
     width: 100%;
     padding: 120px 8%;
-
-    display: grid;
-    grid-template-columns: 560px minmax(0, 1fr);
-    grid-template-areas:
-        "challenges sketch"
-        "resource sketch";
-
-    column-gap: 80px;
-    row-gap: 52px;
-
-    align-items: start;
 }
 
 .project-challenges-text {
-    grid-area: challenges;
-
     width: 100%;
-    max-width: 560px;
+    max-width: 760px;
 }
 
 .project-challenges-text h2 {
@@ -921,6 +878,7 @@ body.lightbox-open {
 }
 
 .project-challenges-text > p:not(.section-label) {
+    max-width: 620px;
     margin-bottom: 28px;
 
     font-size: 1rem;
@@ -929,11 +887,13 @@ body.lightbox-open {
 }
 
 .project-challenges-text ul {
+    max-width: 760px;
+
     list-style: none;
 }
 
 .project-challenges-text li {
-    padding: 12px 0;
+    padding: 14px 0;
 
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -947,12 +907,58 @@ body.lightbox-open {
 }
 
 
+/* =========================================================
+   Solution
+   ========================================================= */
+
+.project-solution {
+    width: 100%;
+    padding: 120px 8%;
+}
+
+.project-solution-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: start;
+}
+
+.project-solution-text {
+    width: 100%;
+    max-width: 560px;
+}
+
+.project-solution h2 {
+    margin-bottom: 28px;
+}
+
+.project-solution-text > p {
+    margin-bottom: 24px;
+
+    font-size: 1rem;
+    line-height: 1.75;
+    opacity: 0.68;
+}
+
+.project-solution-text > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.project-solution .project-secondary-image {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   Project resource: report, video, GitHub or publication
+   ========================================================= */
 
 .project-resource {
-    grid-area: resource;
-
     width: 100%;
-    margin-top: 0;
+    margin-top: 52px;
     padding-top: 32px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -978,7 +984,6 @@ body.lightbox-open {
     opacity: 0.68;
 }
 
-.project-resource 
 .project-resource-links {
     display: flex;
     flex-wrap: wrap;
@@ -987,24 +992,34 @@ body.lightbox-open {
 }
 
 .resource-link {
-    margin-top: 0;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+
+    border-bottom: 1px solid currentColor;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.25s ease;
+}
+
+.resource-link:hover {
+    opacity: 0.6;
 }
 
 
-
-.project-challenges .project-secondary-image {
-    grid-area: sketch;
-
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* =========================================================
+   Reflection
+   ========================================================= */
 
 .project-reflection {
     padding: 120px 8%;
 }
+
+
+/* =========================================================
+   Project footer
+   ========================================================= */
 
 .project-footer {
     margin: 0 8%;
@@ -1020,18 +1035,9 @@ body.lightbox-open {
 }
 
 
-.resource-link {
-    display: inline-block;
-    margin-top: 1.5rem;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 0.2rem;
-}
-
-.resource-link:hover {
-    opacity: 0.6;
-}
+/* =========================================================
+   Optional GNSS rover image
+   ========================================================= */
 
 .gnss-rover-image {
     width: min(560px, 84%);
@@ -1039,9 +1045,10 @@ body.lightbox-open {
 }
 
 .gnss-rover-image img {
-    display: block;
     width: 100%;
     height: auto;
+
+    display: block;
 }
 
 .gnss-rover-image figcaption {
@@ -1049,38 +1056,13 @@ body.lightbox-open {
 
     font-size: 0.8rem;
     line-height: 1.5;
-
     opacity: 0.55;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Project page — mobile correction */
+/* =========================================================
+   Project page — tablet and smartphone layout
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -1108,6 +1090,9 @@ body.lightbox-open {
         font-size: 0.78rem;
     }
 
+
+    /* Project introduction */
+
     .project-introduction {
         width: 100%;
         padding: 80px 24px 64px;
@@ -1115,13 +1100,11 @@ body.lightbox-open {
 
     .project-introduction h1 {
         width: 100%;
-        max-width: 1000px;
+        max-width: none;
 
-        font-size: clamp(3.4rem, 9vw, 8rem);
-        line-height: 0.92;
-        letter-spacing: -0.06em;
-
-        overflow-wrap: break-word;
+        font-size: clamp(3rem, 15vw, 5rem);
+        line-height: 0.94;
+        letter-spacing: -0.055em;
     }
 
     .project-lead {
@@ -1135,12 +1118,14 @@ body.lightbox-open {
     .project-details {
         width: 100%;
         margin-top: 52px;
+        padding-top: 22px;
 
         grid-template-columns: 1fr;
         gap: 26px;
-
-        padding-top: 22px;
     }
+
+
+    /* Project images */
 
     .project-hero-image,
     .project-secondary-image {
@@ -1167,41 +1152,7 @@ body.lightbox-open {
     }
 
 
-    .project-challenges {
-        width: 100%;
-        padding: 72px 24px 96px;
-
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "challenges"
-            "sketch"
-            "resource";
-
-        gap: 48px;
-    }
-
-    .project-challenges-text {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .project-challenges .project-secondary-image {
-        width: 100%;
-        max-width: none;
-        padding: 0;
-    }
-
-    .project-resource {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .project-resource-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-    }
-
+    /* Overview and reflection */
 
     .project-story {
         width: 100%;
@@ -1211,13 +1162,13 @@ body.lightbox-open {
     .project-story-layout {
         width: 100%;
 
-        display: grid;
         grid-template-columns: 1fr;
         gap: 38px;
     }
 
     .project-story h2,
-    .project-challenges-text h2 {
+    .project-challenges-text h2,
+    .project-solution h2 {
         max-width: 100%;
 
         font-size: clamp(2rem, 9vw, 2.8rem);
@@ -1234,6 +1185,61 @@ body.lightbox-open {
         font-size: 1rem;
         line-height: 1.75;
     }
+
+
+    /* Key challenges */
+
+    .project-challenges {
+        width: 100%;
+        padding: 72px 24px 96px;
+    }
+
+    .project-challenges-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Solution */
+
+    .project-solution {
+        width: 100%;
+        padding: 72px 24px 96px;
+    }
+
+    .project-solution-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .project-solution-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-solution .project-secondary-image {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Project resources */
+
+    .project-resource {
+        width: 100%;
+        margin-top: 44px;
+    }
+
+    .project-resource-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+
+    /* Reflection and footer */
 
     .project-reflection {
         padding-bottom: 110px;
@@ -1253,8 +1259,4 @@ body.lightbox-open {
         width: auto;
         margin: 56px 24px 80px;
     }
-
-
-
-
 }
