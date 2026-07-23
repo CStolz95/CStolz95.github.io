@@ -9,11 +9,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>GNSS RTK Module Integration — Chris Stolz</title>
+    <title>Sensor Suite Development — Chris Stolz</title>
 
     <meta
         name="description"
-        content="Design, integration and validation of a modular GNSS RTK localization subsystem for a ROS2-based mobile robot."
+        content="Design, implementation and validation of a low-cost GNSS-synchronized multi-camera perception system for a ROS2-based unmanned ground vehicle."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,15 +48,15 @@
 
         <section class="project-introduction">
 
-            <p class="section-label">Engineering · 03</p>
+            <p class="section-label">Engineering · 02</p>
 
-            <h1>GNSS RTK Module Integration</h1>
+            <h1>Sensor Suite Development</h1>
 
             <p class="project-lead">
-                Designed, integrated and validated a modular GNSS RTK localization
-                subsystem for a ROS2-based mobile robot, enabling centimeter-level
-                outdoor localization through mechanical, electrical and software
-                integration.
+                Designed, implemented and validated a low-cost GNSS-synchronized
+                multi-camera perception system for a ROS2-based unmanned ground
+                vehicle, combining embedded hardware, camera calibration and
+                synchronized image acquisition.
             </p>
 
             <div class="project-details">
@@ -73,7 +73,7 @@
 
                 <div>
                     <p class="project-detail-label">Focus</p>
-                    <p>Systems engineering / Robotics / ROS2</p>
+                    <p>Computer vision / Embedded systems / ROS2</p>
                 </div>
 
             </div>
@@ -92,22 +92,31 @@
                 <div class="project-content-text">
 
                     <h2>
-                        Bringing centimeter-level localization to an autonomous
-                        mobile robot.
+                        Building a synchronized multi-camera perception system
+                        on low-cost embedded hardware.
                     </h2>
 
                     <p>
-                        Reliable outdoor navigation requires accurate global
-                        localization to complement LiDAR, cameras and inertial sensors.
-                        While SLAM provides precise local positioning, accumulated drift
-                        limits long-term operation over large distances.
+                        Autonomous mobile robots depend on spatially and temporally
+                        consistent sensor data for localization, mapping, obstacle
+                        avoidance and sensor fusion. Industrial perception systems
+                        typically achieve this using dedicated synchronization hardware,
+                        deterministic communication interfaces and powerful computing
+                        platforms.
                     </p>
 
                     <p>
-                        This project focused on integrating a modular GNSS RTK subsystem
-                        into the Husarion Panther platform, combining mechanical design,
-                        hardware integration, ROS2 software integration and experimental
-                        validation into a complete localization solution.
+                        This project investigated whether synchronized multi-camera
+                        perception could instead be implemented using commercially
+                        available USB3 cameras, a Raspberry Pi 5 and a modular
+                        ROS2-based software architecture.
+                    </p>
+
+                    <p>
+                        The resulting sensor suite was designed for integration on the
+                        Husarion Panther UGV and provides wide-area visual coverage,
+                        GNSS-referenced timing and calibrated image data for future
+                        perception and sensor-fusion applications.
                     </p>
 
                 </div>
@@ -119,7 +128,7 @@
                     </div>
 
                     <figcaption>
-                        Robot platform, project context or complete system overview.
+                        Husarion Panther UGV with the integrated multi-camera sensor suite.
                     </figcaption>
 
                 </figure>
@@ -140,35 +149,46 @@
                 <div class="project-content-text">
 
                     <h2>
-                        Integrating precise localization without compromising
-                        modularity.
+                        Balancing synchronization, calibration and embedded
+                        system limitations.
                     </h2>
 
                     <p>
-                        The system had to integrate into the existing robot without
-                        compromising positioning accuracy, serviceability or reliability.
+                        The system had to provide reliable and geometrically consistent
+                        multi-camera data while operating within strict cost, bandwidth,
+                        processing and mechanical constraints.
                     </p>
 
                     <ul class="project-content-list">
+
                         <li>
-                            Mechanical integration of the GNSS antenna and LiDAR
+                            Coordinated acquisition from three USB3 global-shutter cameras
                         </li>
 
                         <li>
-                            Design of a modular interface
+                            GNSS-referenced timestamping and synchronization architecture
                         </li>
 
                         <li>
-                            ROS2 integration using a dedicated Raspberry Pi 5
+                            Intrinsic and extrinsic calibration with limited field-of-view overlap
                         </li>
 
                         <li>
-                            Cable management and EMC-aware hardware layout
+                            Management of high-bandwidth image streams on a Raspberry Pi 5
                         </li>
 
                         <li>
-                            Experimental validation of positioning accuracy
+                            Compact and mechanically stable camera integration
                         </li>
+
+                        <li>
+                            ROS2 integration and distributed sensor-data publication
+                        </li>
+
+                        <li>
+                            Preparation for future hardware-triggered synchronization
+                        </li>
+
                     </ul>
 
                 </div>
@@ -180,7 +200,7 @@
                     </div>
 
                     <figcaption>
-                        Development, testing or integration image.
+                        Camera field-of-view overlap, calibration or system testing.
                     </figcaption>
 
                 </figure>
@@ -201,26 +221,41 @@
                 <div class="project-content-text">
 
                     <h2>
-                        A modular GNSS RTK subsystem designed for integration and
-                        field testing.
+                        A modular GNSS-referenced perception platform with
+                        synchronized image acquisition.
                     </h2>
 
                     <p>
-                        The final solution combined the GNSS RTK receiver, antennas,
-                        LiDAR and embedded computing hardware into a modular subsystem
-                        for the Husarion Panther platform.
+                        The developed system integrates three Teledyne FLIR Firefly
+                        USB3 global-shutter RGB cameras, a GNSS/RTK receiver and a
+                        Raspberry Pi 5 within a compact sensor enclosure mounted on
+                        the Husarion Panther UGV.
                     </p>
 
                     <p>
-                        A dedicated Raspberry Pi 5 handled the ROS2 integration, while
-                        the mechanical interface supported accurate antenna placement,
-                        structured cable routing and straightforward maintenance.
+                        A custom acquisition framework was implemented in C++ using
+                        ROS2 Jazzy and the Teledyne FLIR Spinnaker SDK. It provides
+                        deterministic camera management, synchronized frame grouping,
+                        timestamp handling, calibration integration and distributed
+                        publication of image and GNSS data.
                     </p>
 
                     <p>
-                        The subsystem was evaluated through experimental testing to
-                        verify positioning accuracy and system reliability under
-                        realistic outdoor operating conditions.
+                        A complete OpenCV-based calibration pipeline using ChArUco
+                        targets was developed for intrinsic and extrinsic camera
+                        calibration. Experimental validation demonstrated sub-pixel
+                        intrinsic calibration accuracy and physically consistent
+                        extrinsic calibration results for the evaluated camera
+                        configuration.
+                    </p>
+
+                    <p>
+                        Under nominal operating conditions, the system achieved stable
+                        synchronized acquisition at 30 Hz using full-resolution BayerBG8
+                        image streams, with nearly no timing jitter and no missing
+                        synchronized frame sets. The architecture also prepares the
+                        required interfaces for future GNSS-triggered hardware
+                        synchronization.
                     </p>
 
                     <div class="project-resource">
@@ -234,15 +269,16 @@
                         </h3>
 
                         <p>
-                            Read the complete project report covering system
-                            architecture, mechanical design, ROS2 integration and
-                            experimental validation.
+                            Read the complete report covering system architecture,
+                            mechanical and electrical integration, ROS2 software,
+                            camera calibration, synchronization and experimental
+                            validation.
                         </p>
 
                         <div class="project-resource-links">
 
                             <a
-                                href="../documents/gnss-rtk-project-report.pdf"
+                                href="../documents/sensor-suite-project-report.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="resource-link"
@@ -251,11 +287,20 @@
                             </a>
 
                             <a
-                                href="../documents/gnss-rtk-project-report.pdf"
+                                href="../documents/sensor-suite-project-report.pdf"
                                 download
                                 class="resource-link"
                             >
                                 Download PDF ↓
+                            </a>
+
+                            <a
+                                href="https://github.com/CStolz95/husarion_ugv_sensor_suite"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="resource-link"
+                            >
+                                View GitHub repository ↗
                             </a>
 
                         </div>
@@ -268,12 +313,12 @@
 
                     <img
                         src="../images/sensor-suite-sketch.png"
-                        alt="Technical design sketch of the sensor suite"
+                        alt="Technical design sketch of the GNSS-synchronized multi-camera sensor suite"
                         loading="lazy"
                     >
 
                     <figcaption>
-                        Technical design sketch of the GNSS RTK localization subsystem.
+                        Technical design sketch of the integrated multi-camera sensor suite.
                     </figcaption>
 
                 </figure>
@@ -296,24 +341,38 @@
             <div class="project-reflection-text">
 
                 <p>
-                    This project strengthened my understanding of systems integration.
-                    Designing reliable robotics requires more than selecting components—it
-                    requires careful consideration of mechanical design, electrical interfaces,
-                    software architecture and verification as one coherent system.
+                    This project showed me how strongly synchronization, calibration,
+                    mechanical design and computing performance are connected in a
+                    robotic perception system. Improving one aspect often introduces
+                    new constraints elsewhere, making system-level trade-offs just as
+                    important as the performance of individual components.
                 </p>
 
                 <p>
-                    Working across CAD, manufacturing, ROS2 integration and experimental
-                    validation reinforced the importance of building solutions that are not
-                    only functional, but modular, maintainable and measurable.
+                    Developing both the physical sensor suite and its ROS2 acquisition
+                    framework strengthened my ability to work across mechanical
+                    integration, embedded computing, computer vision and software
+                    architecture. It also reinforced the importance of designing
+                    systems that can be tested independently, reproduced and extended
+                    as requirements evolve.
                 </p>
 
                 <p>
-                    It also showed me how quickly engineering becomes multidisciplinary.
-                    A seemingly simple localization upgrade required decisions spanning
-                    mechanical design, electronics, embedded computing, ROS2 software and
-                    field testing. Bringing these elements together was one of the most
-                    rewarding parts of the project.
+                    The validation work highlighted the practical difference between
+                    an architecture that works under nominal conditions and one that is
+                    fully deterministic. Software-coordinated synchronization provided
+                    stable acquisition for the evaluated configuration, but future
+                    hardware triggering remains important for guaranteeing simultaneous
+                    camera exposure.
+                </p>
+
+                <p>
+                    The project also demonstrated that low-cost hardware can provide a
+                    capable foundation for robotic perception when its limitations are
+                    understood and addressed deliberately. Bandwidth, field-of-view
+                    overlap, mechanical rigidity and recording overhead all became
+                    measurable engineering constraints rather than abstract design
+                    considerations.
                 </p>
 
             </div>
