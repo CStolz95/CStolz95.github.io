@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" role="img" aria-labelledby="title desc">
+<title id="title">STOLZ</title>
+<desc id="desc">Clean geometric STOLZ wordmark.</desc>
+<g fill="none" stroke="currentColor" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+<path d="M260 70H105 C72 70 54 88 54 116 C54 144 73 162 105 162 H211 C243 162 262 180 262 208 C262 236 243 254 211 254 H54"/>
+<path d="M345 70H535"/><path d="M440 130V254"/>
+<path d="M666 132V116 C666 87 684 70 713 70 H758"/>
+<path d="M798 70H843 C872 70 890 87 890 116 V132"/>
+<path d="M890 172V208 C890 237 872 254 843 254 H798"/>
+<path d="M758 254H713 C684 254 666 237 666 208 V172"/>
+<path d="M980 70V208 C980 237 997 254 1026 254 H1165"/>
+<path d="M1265 70H1515 L1265 254 H1515"/>
+</g>
+</svg>

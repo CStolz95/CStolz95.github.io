@@ -71,9 +71,14 @@ button:focus-visible {
 }
 
 .logo {
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
 }
 
 .nav-links {
@@ -533,8 +538,8 @@ body.lightbox-open {
         padding: 20px;
     }
 
-    .logo {
-        font-size: 1rem;
+    .logo img {
+        width: 75px;
     }
 
     .nav-links {
